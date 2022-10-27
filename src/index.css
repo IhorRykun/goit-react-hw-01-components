@@ -18,3 +18,26 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.profile {
+  border-radius: 8px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: gray;
+  text-align: center;
+}
+.avatar {
+  width: 250px;
+  height: 250px;
+}
+.list__item {
+  text-align: center;
+  list-style: none;
+}
+.stats {
+  display: flex;
+  width: 250px;
+  height: 75px;
+  border: 2px solid black;
+}

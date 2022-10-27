@@ -15,15 +15,15 @@ function User() {
       </div>
 
       <ul class="stats">
-        <li>
+        <li class="list__item">
           <span class="label">Followers</span>
           <span class="quantity">{data.stats.followers}</span>
         </li>
-        <li>
+        <li class="list__item">
           <span class="label">Views</span>
           <span class="quantity">{data.stats.views}</span>
         </li>
-        <li>
+        <li class="list__item">
           <span class="label">Likes</span>
           <span class="quantity">{data.stats.likes}</span>
         </li>
