@@ -1,8 +1,7 @@
-export const App = () => {
-  return (
-    <div>
-      <p> hello world</p>
-      <h2>Аміго</h2>
-    </div>
-  );
-};
+import User from './profile';
+
+function App() {
+  return <User />;
+}
+
+export default App;
