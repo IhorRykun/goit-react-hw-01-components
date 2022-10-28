@@ -6,26 +6,26 @@ function User() {
   const { username, tag, location, avatar, followers, staviewsts, likes } =
     data;
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+    <div className="profile">
+      <div className="description">
+        <img src={avatar} alt="User avatar" className="avatar" />
+        <p className="name">{username}</p>
+        <p className="tag">@{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
-        <li class="list__item">
-          <span class="label">Followers</span>
-          <span class="quantity">{data.stats.followers}</span>
+      <ul className="stats">
+        <li className="list__item">
+          <span className="label">Followers</span>
+          <span className="quantity">{data.stats.followers}</span>
         </li>
-        <li class="list__item">
-          <span class="label">Views</span>
-          <span class="quantity">{data.stats.views}</span>
+        <li className="list__item">
+          <span className="label">Views</span>
+          <span className="quantity">{data.stats.views}</span>
         </li>
-        <li class="list__item">
-          <span class="label">Likes</span>
-          <span class="quantity">{data.stats.likes}</span>
+        <li className="list__item">
+          <span className="label">Likes</span>
+          <span className="quantity">{data.stats.likes}</span>
         </li>
       </ul>
     </div>
