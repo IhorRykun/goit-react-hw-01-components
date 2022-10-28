@@ -1,5 +1,4 @@
-import User from './profile';
-// import StaticId from './Statistics';
+import User from './profile/profile';
 
 function App() {
   return <User />;

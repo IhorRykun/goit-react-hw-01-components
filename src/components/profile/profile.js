@@ -1,8 +1,8 @@
-import users from '../components/data/user.json';
+import users from '../../data/user.json';
 
 const data = users;
 
-function User() {
+function User(user) {
   const {
     username,
     tag,
