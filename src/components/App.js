@@ -2,6 +2,10 @@ import User from './profile';
 // import StaticId from './Statistics';
 
 function App() {
-  return <User />;
+  return (
+    <div>
+      <User />;
+    </div>
+  );
 }
 export default App;

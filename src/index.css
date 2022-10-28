@@ -22,10 +22,11 @@ body {
 .profile {
   border-radius: 8px;
   display: block;
-  width: 150px;
+  width: 250px;
   height: 250px;
   background-color: gray;
   text-align: center;
+  border: 2px solid red;
 }
 .avatar {
   width: 250px;
@@ -39,4 +40,12 @@ body {
   display: flex;
   width: 250px;
   height: 75px;
+}
+
+.div__il--itemdiv__il--item {
+  border: 2px solid black;
+}
+
+.description {
+  border: 2px solid black;
 }
