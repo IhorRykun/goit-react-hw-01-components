@@ -22,15 +22,15 @@ function User() {
       <ul className="stats">
         <li className="list__item">
           <span className="label">Followers</span>
-          <span className="quantity">{data.stats.followers}</span>
+          <span className="quantity">{followers}</span>
         </li>
         <li className="list__item">
-          <span className="label">Views</span>
-          <span className="quantity">{data.stats.views}</span>
+          <span className="label">Views</span>d
+          <span className="quantity">{views}</span>
         </li>
         <li className="list__item">
           <span className="label">Likes</span>
-          <span className="quantity">{data.stats.likes}</span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
     </div>
