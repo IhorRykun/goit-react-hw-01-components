@@ -3,8 +3,13 @@ import users from '../components/data/user.json';
 const data = users;
 
 function User() {
-  const { username, tag, location, avatar, followers, staviewsts, likes } =
-    data;
+  const {
+    username,
+    tag,
+    location,
+    avatar,
+    stats: { followers, views, likes },
+  } = data;
   return (
     <div className="profile">
       <div className="description">
@@ -17,15 +22,15 @@ function User() {
       <ul className="stats">
         <li className="list__item">
           <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className="quantity">{data.stats.followers}</span>
         </li>
         <li className="list__item">
           <span className="label">Views</span>
-          <span className="quantity">{staviewsts}</span>
+          <span className="quantity">{data.stats.views}</span>
         </li>
         <li className="list__item">
           <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className="quantity">{data.stats.likes}</span>
         </li>
       </ul>
     </div>
