@@ -1,33 +1,33 @@
-import stats from '../components/data/static.json';
+// import stats from '../components/data/static.json';
 
-const ВataStats = stats;
+// const ВataStats = stats;
 
-function StaticId(title, stats) {
-  const { label, percentage } = stats;
-  return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+// function StaticId(title, stats) {
+//   const { label, percentage } = stats;
+//   return (
+//     <section class="statistics">
+//       <h2 class="title">{title}</h2>
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-        <li class="item">
-          <span class="label">{label}</span>
-          <span class="percentage">{percentage}</span>
-        </li>
-      </ul>
-    </section>
-  );
-}
+//       <ul class="stat-list">
+//         <li class="item">
+//           <span class="label">{label}</span>
+//           <span class="percentage">{percentage}</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{label}</span>
+//           <span class="percentage">{percentage}</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{label}</span>
+//           <span class="percentage">{percentage}</span>
+//         </li>
+//         <li class="item">
+//           <span class="label">{label}</span>
+//           <span class="percentage">{percentage}</span>
+//         </li>
+//       </ul>
+//     </section>
+//   );
+// }
 
-export default StaticId;
+// export default StaticId;
