@@ -11,15 +11,15 @@ export const User = ({ username, tag, location, avatar, stats }) => {
       </div>
 
       <ul className={css.stats}>
-        <li className="list__item">
+        <li className={css.list__item}>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li className="list__item">
+        <li className={css.list__item}>
           <span className="label">Views</span>d
           <span className="quantity">{stats.views}</span>
         </li>
-        <li className="list__item">
+        <li className={css.list__item}>
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
         </li>
