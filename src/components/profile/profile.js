@@ -1,17 +1,8 @@
-import users from '../../data/user.json';
+import css from '../profile/profile.module.css';
 
-const data = users;
-
-function User(user) {
-  const {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes },
-  } = data;
+export const User = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div className={css.profile}>
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
@@ -22,19 +13,17 @@ function User(user) {
       <ul className="stats">
         <li className="list__item">
           <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className="quantity">{stats.followers}</span>
         </li>
         <li className="list__item">
           <span className="label">Views</span>d
-          <span className="quantity">{views}</span>
+          <span className="quantity">{stats.views}</span>
         </li>
         <li className="list__item">
           <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>
   );
-}
-
-export default User;
+};
