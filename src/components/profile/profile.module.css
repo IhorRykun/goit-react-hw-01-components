@@ -11,6 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  outline: 2px solid orange;
+  padding: 0;
 }
 
 .description {
@@ -46,9 +48,24 @@
 }
 
 .stats {
-  margin: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
-.stats {
-  list-style: none;
+.label {
+  color: white;
+}
+
+.quantity {
+  display: block;
+  color: orange;
+}
+
+.list__item {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
