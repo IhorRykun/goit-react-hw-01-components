@@ -11,6 +11,7 @@
   border-radius: 8px;
   border: 2px solid black;
   outline: 2px solid orange;
+  width: 300px;
 }
 .title {
   display: flex;
