@@ -61,6 +61,7 @@
 .quantity {
   display: block;
   color: orange;
+  padding-top: 10px;
 }
 
 .list__item {
