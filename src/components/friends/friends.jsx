@@ -14,10 +14,8 @@ export const Friend = ({ friends: { isOnline, id, avatar, name } }) => {
 };
 
 Friend.ProTypes = {
-  friends: ProTypes.exact({
-    id: ProTypes.number.isRequired,
-    isOnline: ProTypes.string.isRequired,
-    name: ProTypes.string.isRequired,
-    avatar: ProTypes.elementType.isRequired,
-  }),
+  id: ProTypes.number.isRequired,
+  isOnline: ProTypes.string.isRequired,
+  name: ProTypes.string.isRequired,
+  avatar: ProTypes.elementType.isRequired,
 };

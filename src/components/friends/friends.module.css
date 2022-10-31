@@ -1,14 +1,9 @@
-.isOnline {
-  display: block;
-  color: red;
-}
-
 .list {
   list-style: none;
   background-color: gray;
   display: block;
-  height: 200px;
   display: inline-flex;
   align-items: center;
   width: 300px;
+  margin: 0 auto;
 }

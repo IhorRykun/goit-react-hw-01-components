@@ -30,13 +30,11 @@ export const User = ({ username, tag, location, avatar, stats }) => {
 };
 
 User.ProtoTypes = {
-  user: ProtoTypes.exact({
-    username: ProtoTypes.string.isRequired,
-    tag: ProtoTypes.string.isRequired,
-    location: ProtoTypes.string.isRequired,
-    avatar: ProtoTypes.elementType.isRequired,
-    followers: ProtoTypes.number.isRequired,
-    views: ProtoTypes.number.isRequired,
-    likes: ProtoTypes.number.isRequired,
-  }),
+  username: ProtoTypes.string.isRequired,
+  tag: ProtoTypes.string.isRequired,
+  location: ProtoTypes.string.isRequired,
+  avatar: ProtoTypes.elementType.isRequired,
+  followers: ProtoTypes.number.isRequired,
+  views: ProtoTypes.number.isRequired,
+  likes: ProtoTypes.number.isRequired,
 };
