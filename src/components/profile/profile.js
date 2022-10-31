@@ -29,7 +29,7 @@ export const User = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-User.ProtoTypes = {
+User.propTypes = {
   username: ProtoTypes.string.isRequired,
   tag: ProtoTypes.string.isRequired,
   location: ProtoTypes.string.isRequired,

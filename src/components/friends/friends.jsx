@@ -1,4 +1,4 @@
-import ProTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from '../friends/friends.module.css';
 
 export const Friend = ({ friends: { isOnline, id, avatar, name } }) => {
@@ -13,9 +13,9 @@ export const Friend = ({ friends: { isOnline, id, avatar, name } }) => {
   );
 };
 
-Friend.ProTypes = {
-  id: ProTypes.number.isRequired,
-  isOnline: ProTypes.string.isRequired,
-  name: ProTypes.string.isRequired,
-  avatar: ProTypes.elementType.isRequired,
+Friend.propTypes = {
+  id: PropTypes.number.isRequired,
+  isOnline: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.elementType.isRequired,
 };
