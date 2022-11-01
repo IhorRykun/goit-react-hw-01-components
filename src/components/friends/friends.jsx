@@ -8,9 +8,7 @@ export const FriendList = ({ isOnline, id, avatar, name }) => {
       key={id}
       style={{ backgroundColor: isOnline ? 'green' : 'red' }}
     >
-      <span className={css.isOnline}>
-        {{ isOnline } ? ("online") : ("ofline")}
-      </span>
+      <span className={css.isOnline}>{isOnline ? 'onLine' : 'offLine'}</span>
       <img src={avatar} alt="User avatar" width="48" />
       <p>{name}</p>
     </li>
