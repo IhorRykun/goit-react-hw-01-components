@@ -1,21 +1,25 @@
 import PropTypes from 'prop-types';
 import css from '../friends/friends.module.css';
 
-export const Friend = ({ friends: { isOnline, id, avatar, name } }) => {
+export const FriendList = ({ isOnline, id, avatar, name }) => {
   return (
-    <ul className={css.list}>
-      <li className={css.item} key={id}>
-        <span className={css.isOnline}>{isOnline}</span>
-        <img src={avatar} alt="User avatar" width="48" />
-        <p>{name}</p>
-      </li>
-    </ul>
+    <li
+      className={css.item}
+      key={id}
+      style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+    >
+      <span className={css.isOnline}>
+        {{ isOnline } ? ("online") : ("ofline")}
+      </span>
+      <img src={avatar} alt="User avatar" width="48" />
+      <p>{name}</p>
+    </li>
   );
 };
 
-Friend.propTypes = {
+FriendList.protoTypes = {
   id: PropTypes.number.isRequired,
-  isOnline: PropTypes.string.isRequired,
+  isOnline: PropTypes.string,
   name: PropTypes.string.isRequired,
   avatar: PropTypes.elementType.isRequired,
 };
