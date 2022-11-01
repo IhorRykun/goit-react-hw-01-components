@@ -6,7 +6,10 @@ export const FriendList = ({ isOnline, id, avatar, name }) => {
     <li
       className={css.item}
       key={id}
-      style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+      style={{
+        backgroundColor: isOnline ? '#08dd08' : 'coral',
+        color: isOnline ? 'blue' : 'red',
+      }}
     >
       <span className={css.isOnline}>{isOnline ? 'onLine' : 'offLine'}</span>
       <img src={avatar} alt="User avatar" width="48" />
