@@ -1,0 +1,17 @@
+.table {
+  margin: 50px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: 2px solid orange;
+  width: 300px;
+  background-color: grey;
+  color: white;
+}
+.thead {
+  color: black;
+}
+
+.tr {
+  text-align: center;
+  padding: 5px;
+}
